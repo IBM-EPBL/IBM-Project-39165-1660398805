@@ -1,0 +1,169 @@
+* { box-sizing:border-box; }
+
+/* basic stylings ------------------------------------------ */
+body 				 {
+    background: url(/img/univbg.jpg);
+	height: 100vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative; 
+}
+
+    
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+
+	img {
+		width: 100%;
+	}
+}
+.container 		{ 
+    font-family: 'Roboto';
+    opacity: 0.9;
+    width: 600px;
+    height: 100%;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);  
+    border-radius: 20px;
+    margin: 30px auto 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    display: block;
+    background: #FFF;
+    padding: 2px 51px -2px;
+    padding: 10px;
+}
+h2 		 { 
+  text-align:center; 
+  margin-bottom:50px; 
+}
+h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+.footer 	{ text-align:center; }
+.footer a  { color:#53B2C8; }
+
+/* form starting stylings ------------------------------- */
+.form-data 			  { 
+    position: relative;
+    margin-left: 100px;
+    margin-bottom: 35px;    
+}
+input 				{
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+label 				 {
+  color:black; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:16px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+.btns {
+    background-color: #f6f5f7;
+    font-size: larger;
+    width: 200px;
+    border-radius: 29px;
+    margin: 0 auto;
+    font-weight: 700;
+    display: inline;
+    height: 40px;
+
+}
+
+.buttons {
+    width: 200px;
+    margin: 0 auto;
+    display: inline;
+}
+
+h1 {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}

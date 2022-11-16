@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/prediction_home.css">
+    <title>University Admit Eligibility Predictor</title>
+</head>
+
+<body class="home">
+
+    <div class="container">
+        <h1>University Eligibility Predictor</h1>
+        <form method="post" action="/predict" class="form">
+            <div class="form-data">
+                <input name="greScore" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="greScore">GRE Score:</label>
+            </div>
+            <div class="form-data">
+                <input name="toeflScore" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="toeflScore">TOEFL Score:</label>
+
+            </div>
+            <div class="form-data">
+                <input name="univRank" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="univRank">University Rank:</label>
+            </div>
+            <div class="form-data">
+                <input name="sop" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="sop">SOP:</label>
+            </div>
+            <div class="form-data">
+                <input name="lor" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="lor">LOR:</label>
+            </div>
+            <div class="form-data">
+                <input name="cgpa" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="cgpa">CGPA:</label>
+            </div>
+            <div class="form-data">
+                <input name="research" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="research">Research:</label>
+            </div>
+            <div class="buttons">
+                <button type="submit" class="btns">Submit</button>
+            <a href="/"><button type="button" class="btns">Back</button></a>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>
