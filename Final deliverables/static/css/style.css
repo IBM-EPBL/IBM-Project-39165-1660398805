@@ -1,0 +1,43 @@
+h1 {
+    text-align: center;
+}
+h2{
+    margin-top: 30px;
+    text-align: left;
+ }
+ .font_edits{
+     font-weight: bold;
+ }
+ .btn_edits{
+     font-size: large;
+ }
+ ::after{
+    box-sizing: border-box;
+ }
+ picture{
+    max-width: 100%;
+    display: block;
+ }
+ body {
+    background-image: url("/static/img/university\ background.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    color: white;
+ }
+
+ .container {
+    border: 5px solid blue;
+    margin-right: 800px;
+    border-radius: 30px;
+    background-color: grey;
+    font-size: medium;
+}
+
+.footer {
+    text-align: center;
+    justify-content: center;
+    padding-top: 10%;
+    font-weight: bolder;
+    
+}
